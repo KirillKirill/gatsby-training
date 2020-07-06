@@ -2,13 +2,6 @@ import styled from "styled-components"
 
 export const Header = styled.header`
   display: flex;
-
-  * > img {
-  }
-
-  * > p {
-    margin: 0;
-  }
 `
 
 export const HeaderLeftPart = styled.div`
