@@ -13,7 +13,9 @@ export default function Header({ data }) {
       <S.VioletFigureVertical />
       <S.BlackFigure />
       <S.DescriptionBlock>
-        <p>{markdownRemark.frontmatter.description}</p>
+        <S.DescriptionText>
+          {markdownRemark.frontmatter.description}
+        </S.DescriptionText>
       </S.DescriptionBlock>
       {renderCross()}
     </S.FiguresBlock>
@@ -48,7 +50,7 @@ export default function Header({ data }) {
     <S.Header>
       <S.HeaderLeftPart>
         <S.LogoContainer>
-          <img src={logo.childImageSharp.fluid.src} alt="banner" />
+          <S.LogoImage src={logo.childImageSharp.fluid.src} alt="logo" />
         </S.LogoContainer>
         <S.LeftBlackRectangle />
         <S.Title>{markdownRemark.frontmatter.title}</S.Title>
