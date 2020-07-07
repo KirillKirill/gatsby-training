@@ -13,8 +13,8 @@ export default function HeaderWrapper() {
       }
       logo: file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fixed(width: 120, height: 50) {
+            ...GatsbyImageSharpFixed
           }
         }
       }

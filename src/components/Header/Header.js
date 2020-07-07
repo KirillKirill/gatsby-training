@@ -1,5 +1,6 @@
 import React from "react"
 import * as S from "./HeaderStyles"
+import GatsbyImage from "gatsby-image"
 
 export default function Header({ data }) {
   const { markdownRemark, logo } = data
@@ -13,7 +14,9 @@ export default function Header({ data }) {
       <S.VioletFigureVertical />
       <S.BlackFigure />
       <S.DescriptionBlock>
-        <p>{markdownRemark.frontmatter.description}</p>
+        <S.DescriptionText>
+          {markdownRemark.frontmatter.description}
+        </S.DescriptionText>
       </S.DescriptionBlock>
       {renderCross()}
     </S.FiguresBlock>
@@ -48,7 +51,7 @@ export default function Header({ data }) {
     <S.Header>
       <S.HeaderLeftPart>
         <S.LogoContainer>
-          <img src={logo.childImageSharp.fluid.src} alt="banner" />
+          <GatsbyImage fixed={logo.childImageSharp.fixed} />
         </S.LogoContainer>
         <S.LeftBlackRectangle />
         <S.Title>{markdownRemark.frontmatter.title}</S.Title>

@@ -2,15 +2,6 @@ import styled from "styled-components"
 
 export const Header = styled.header`
   display: flex;
-
-  * > img {
-    width: 120px;
-    height: 50px;
-  }
-
-  * > p {
-    margin: 0;
-  }
 `
 
 export const HeaderLeftPart = styled.div`
@@ -23,6 +14,11 @@ export const HeaderLeftPart = styled.div`
 
 export const LogoContainer = styled.div`
   margin-top: 40px;
+`
+
+export const LogoImage = styled.img`
+  width: 120px;
+  height: 50px;
 `
 
 export const Button = styled.button`
@@ -95,8 +91,12 @@ export const DescriptionBlock = styled.div`
   height: 220px;
   width: 830px;
   padding: 50px 180px 50px 50px;
-  color: #535b66;
   background-color: #ffffff;
+`
+
+export const DescriptionText = styled.p`
+  margin: 0;
+  color: #535b66;
   font-size: 16px;
   font-weight: 300;
   line-height: 150%;
