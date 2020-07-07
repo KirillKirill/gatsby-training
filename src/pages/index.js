@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout"
 import HeaderWrapper from "../components/HeaderWrapper/HeaderWrapper"
 import Projects from "../components/Projects/Projects"
 import Offers from "../components/Offers/Offers"
+import Features from "../components/Features/Features"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeaderWrapper />
       <Projects />
       <Offers />
+      <Features />
     </Layout>
   )
 }
