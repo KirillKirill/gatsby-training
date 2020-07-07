@@ -16,11 +16,6 @@ export const LogoContainer = styled.div`
   margin-top: 40px;
 `
 
-export const LogoImage = styled.img`
-  width: 120px;
-  height: 50px;
-`
-
 export const Button = styled.button`
   width: 200px;
   height: 40px;
@@ -29,6 +24,9 @@ export const Button = styled.button`
   background-color: #ffffff;
   cursor: pointer;
   outline: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
 `
 
 export const Title = styled.h1`
