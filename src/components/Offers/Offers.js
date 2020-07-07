@@ -27,8 +27,8 @@ const Offers = () => {
         <S.OffersContainer>
           <S.PurpleBlock width={700} />
           <S.TextContainer>
-            {frontmatter.offers1.map(el => (
-              <span>{el}</span>
+            {frontmatter.offers1.map((el, idx) => (
+              <S.Text key={idx}>{el}</S.Text>
             ))}
           </S.TextContainer>
         </S.OffersContainer>
@@ -38,8 +38,8 @@ const Offers = () => {
         <S.OffersContainer>
           <S.PurpleBlock width={1220} />
           <S.TextContainer>
-            {frontmatter.offers2.map(el => (
-              <span>{el}</span>
+            {frontmatter.offers2.map((el, idx) => (
+              <S.Text key={idx}>{el}</S.Text>
             ))}
           </S.TextContainer>
         </S.OffersContainer>

@@ -60,13 +60,16 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 30px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 200%;
-  color: #535b66;
 `
 
 export const OffersContainer = styled.div`
   display: flex;
   justify-content: space-between;
+`
+
+export const Text = styled.span`
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 200%;
+  color: #535b66;
 `
