@@ -77,7 +77,7 @@ export const MediumBlackRectangle = styled.div`
 
 export const LittleBlackRectangle = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   right: 440px;
   width: 40px;
   height: 40px;
