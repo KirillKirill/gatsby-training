@@ -8,7 +8,7 @@ const Features = () => {
   } = useStaticQuery(graphql`
     query {
       features: markdownRemark(
-        frontmatter: { pageName: { eq: "feature-types" } }
+        frontmatter: { componentName: { eq: "features" } }
       ) {
         frontmatter {
           features

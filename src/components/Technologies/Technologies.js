@@ -23,7 +23,7 @@ const Technologies = () => {
         }
       }
       technologies: markdownRemark(
-        frontmatter: { pageName: { eq: "technologies" } }
+        frontmatter: { componentName: { eq: "technologies" } }
       ) {
         frontmatter {
           technologies

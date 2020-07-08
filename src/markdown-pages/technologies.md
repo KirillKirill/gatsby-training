@@ -1,5 +1,5 @@
 ---
-pageName: technologies
+componentName: technologies
 title: "Technologies we use"
 technologies: [
           "TypeScript",

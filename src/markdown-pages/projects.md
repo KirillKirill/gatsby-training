@@ -1,5 +1,5 @@
 ---
-pageName: project-types
+componentName: projects
 title: "We work with"
 projects: [
     { name: "practices",

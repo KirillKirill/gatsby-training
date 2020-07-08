@@ -7,7 +7,7 @@ const Offers = () => {
     offers: { frontmatter },
   } = useStaticQuery(graphql`
     query {
-      offers: markdownRemark(frontmatter: { pageName: { eq: "offer-types" } }) {
+      offers: markdownRemark(frontmatter: { componentName: { eq: "offers" } }) {
         frontmatter {
           offers1
           offers2
