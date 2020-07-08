@@ -7,6 +7,7 @@ import Features from "../components/Features/Features"
 import Technologies from "../components/Technologies/Technologies"
 import Mobile from "../components/Mobile/Mobile"
 import Info from "../components/Info/Info"
+import Footer from "../components/Footer/Footer"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Technologies />
       <Mobile />
       <Info />
+      <Footer />
     </Layout>
   )
 }
