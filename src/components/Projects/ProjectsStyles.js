@@ -60,5 +60,4 @@ export const Icon = styled.img`
   max-width: 60px;
   max-height: 60px;
   z-index: 3;
-  margin: 0;
 `

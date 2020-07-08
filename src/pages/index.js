@@ -5,6 +5,7 @@ import Projects from "../components/Projects/Projects"
 import Offers from "../components/Offers/Offers"
 import Features from "../components/Features/Features"
 import Technologies from "../components/Technologies/Technologies"
+import Mobile from "../components/Mobile/Mobile"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Offers />
       <Features />
       <Technologies />
+      <Mobile />
     </Layout>
   )
 }

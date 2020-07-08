@@ -7,7 +7,7 @@ html {
     color: #1E242F;
 }
 
-body {
+body, h1, h3, p, img  {
     margin: 0;
 }
 
