@@ -112,7 +112,6 @@ export const Button = styled.button`
   height: 40px;
   margin-top: 40px;
   background-color: #7a3bff;
-  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;

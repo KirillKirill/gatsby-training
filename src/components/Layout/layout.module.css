@@ -17,3 +17,7 @@ body, h1, h3, p, img  {
     width: 1920px;
     margin: 0;
 }
+
+button {
+    font-family: 'Ubuntu', sans-serif
+}
