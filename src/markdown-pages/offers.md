@@ -1,5 +1,5 @@
 ---
-pageName: offer-types
+componentName: offers
 title: "What we can do for you"
 offers1: [
           "Fitness, calorie counter, and nutrition apps",

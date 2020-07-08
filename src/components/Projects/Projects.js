@@ -23,7 +23,7 @@ export default function Projects() {
         }
       }
       projects: markdownRemark(
-        frontmatter: { pageName: { eq: "project-types" } }
+        frontmatter: { componentName: { eq: "projects" } }
       ) {
         frontmatter {
           projects {

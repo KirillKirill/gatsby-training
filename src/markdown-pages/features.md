@@ -1,5 +1,5 @@
 ---
-pageName: feature-types
+componentName: features
 title: "Features we add to your Healthcare app"
 features: [
           "Speech Recognition and Voice control",

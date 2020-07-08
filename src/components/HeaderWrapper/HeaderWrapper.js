@@ -5,7 +5,7 @@ import Header from "../Header/Header"
 export default function HeaderWrapper() {
   const data = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { pageName: { eq: "header" } }) {
+      markdownRemark(frontmatter: { componentName: { eq: "header" } }) {
         frontmatter {
           description
           title
