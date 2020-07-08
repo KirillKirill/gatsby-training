@@ -11,6 +11,6 @@ const typography = new Typography({
   ],
 })
 
-typography.toString()
+// typography.toString()
 
-export default typography
+// export default typography
