@@ -45,5 +45,4 @@ export const BadgeLabel = styled.span`
 export const BadgeIcon = styled.img`
   max-width: 60px;
   max-height: 60px;
-  margin-bottom: 0;
 `

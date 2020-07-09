@@ -14,7 +14,7 @@ export const Row = styled.div`
 `
 
 export const Title = styled.h3`
-  width: 225px;
+  width: 216px;
   margin: 0 440px 0 0;
   font-weight: bold;
   font-size: 36px;
