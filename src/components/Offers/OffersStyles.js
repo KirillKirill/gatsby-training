@@ -26,7 +26,7 @@ export const RedRectangle = styled.div`
   margin-right: 440px;
   width: 90px;
   height: 90px;
-  background-color: #f03f5f;
+  background-color: ${({ theme }) => theme.colors.contextRed};
 `
 
 export const VioletRectangle = styled.div`
@@ -35,7 +35,7 @@ export const VioletRectangle = styled.div`
   left: 180px;
   width: 140px;
   height: 140px;
-  background-color: #7a3bff;
+  background-color: ${({ theme }) => theme.colors.contextViolet};
   z-index: 1;
 `
 
@@ -45,7 +45,7 @@ export const YellowRectangle = styled.div`
   height: 70px;
   top: 90px;
   left: 100px;
-  background-color: #ffd363;
+  background-color: ${({ theme }) => theme.colors.contextYellow};
 `
 
 export const PurpleBlock = styled.div`
@@ -53,7 +53,7 @@ export const PurpleBlock = styled.div`
   height: 190px;
   background: #eff2f8;
   opacity: 0.4;
-  border-right: 15px solid #7a3bff;
+  border-right: 15px solid ${({ theme }) => theme.colors.contextViolet};
 `
 
 export const TextContainer = styled.div`
@@ -68,8 +68,6 @@ export const OffersContainer = styled.div`
 `
 
 export const Text = styled.span`
-  font-weight: 300;
-  font-size: 16px;
   line-height: 200%;
-  color: #535b66;
+  color: ${({ theme }) => theme.colors.contextGrey};
 `

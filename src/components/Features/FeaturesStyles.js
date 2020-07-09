@@ -28,7 +28,7 @@ export const BlackRectangle = styled.div`
   width: 150px;
   height: 150px;
   margin-right: 180px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const YellowRectangle = styled.div`
@@ -37,7 +37,7 @@ export const YellowRectangle = styled.div`
   left: 30px;
   width: 60px;
   height: 60px;
-  background-color: #ffd363;
+  background-color: ${({ theme }) => theme.colors.contextYellow};
 `
 
 export { Container, Row, TextContainer, Text }

@@ -18,7 +18,7 @@ export const ArrowContainer = styled.div`
   height: 80px;
   width: 700px;
   margin-right: 130px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const ArrowButton = styled.button`
@@ -74,11 +74,9 @@ export const PersonName = styled.p`
 `
 
 export const PersonPosition = styled.span`
-  font-weight: 300;
-  font-size: 16px;
   line-height: 18px;
   text-align: center;
-  color: #535b66;
+  color: ${({ theme }) => theme.colors.contextGrey};
 `
 
 export const SlideBackground = styled.div`
