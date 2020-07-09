@@ -33,10 +33,8 @@ const Mobile = () => {
     }
   `)
 
-  const phoneSrc = icons.edges.find(el => el.node.name === "phone").node
-    .publicURL
-  const quoteSrc = icons.edges.find(el => el.node.name === "quote").node
-    .publicURL
+  const getImageURL = nodeName =>
+    icons.edges.find(el => el.node.name === nodeName).node.publicURL
 
   return (
     <S.Container>
@@ -52,10 +50,10 @@ const Mobile = () => {
       <S.Row>
         <S.MobileBlock>
           <S.MobileBackground>
-            <S.MobileIcon src={phoneSrc} />
+            <S.MobileIcon src={getImageURL("phone")} />
           </S.MobileBackground>
           <S.QuoteBlock>
-            <S.QuoteImg src={quoteSrc} />
+            <S.QuoteImg src={getImageURL("quote")} />
             <S.Review>{frontmatter.review}</S.Review>
             <S.ReviewSubtitle>{frontmatter.reviewSubtitle}</S.ReviewSubtitle>
             <S.Button>View more works</S.Button>
