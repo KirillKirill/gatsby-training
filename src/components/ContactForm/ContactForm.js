@@ -18,6 +18,22 @@ const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+
+    const data = formValues
+    const url = "http://localhost:1000/contact"
+
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(res => res.json())
+      .then(response => {
+        alert("Message sent")
+        console.log(response)
+      })
   }
 
   const { name, email, message } = formValues
