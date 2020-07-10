@@ -35,18 +35,15 @@ export const Title = styled.h3`
 
 export const Subtitle = styled.p`
   width: 427px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
   text-align: right;
-  color: #535b66;
+  color: ${({ theme }) => theme.colors.contextGrey};
 `
 
 export const BigBlackRectangle = styled.div`
   position: relative;
   width: 100px;
   height: 100px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const YellowRectangle = styled.div`
@@ -55,7 +52,7 @@ export const YellowRectangle = styled.div`
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: #ffd363;
+  background-color: ${({ theme }) => theme.colors.contextYellow};
 `
 
 export const RedRectangle = styled.div`
@@ -63,7 +60,7 @@ export const RedRectangle = styled.div`
   width: 150px;
   height: 150px;
   margin-top: -38px;
-  background-color: #f03f5f;
+  background-color: ${({ theme }) => theme.colors.contextRed};
 `
 
 export const MediumBlackRectangle = styled.div`
@@ -72,7 +69,7 @@ export const MediumBlackRectangle = styled.div`
   left: -30px;
   width: 90px;
   height: 90px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const LittleBlackRectangle = styled.div`
@@ -81,7 +78,7 @@ export const LittleBlackRectangle = styled.div`
   right: 440px;
   width: 40px;
   height: 40px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const MobileBlock = styled.div`
@@ -94,7 +91,7 @@ export const MobileBackground = styled.div`
   position: relative;
   width: 709px;
   height: 294px;
-  background-color: #7a3bff;
+  background-color: ${({ theme }) => theme.colors.contextViolet};
 `
 
 export const MobileIcon = styled.img`
@@ -125,19 +122,16 @@ export const Review = styled.p`
 `
 
 export const ReviewSubtitle = styled.p`
-  font-weight: 300;
-  font-size: 16px;
   line-height: 18px;
-  color: #535b66;
+  color: ${({ theme }) => theme.colors.contextGrey};
   flex-grow: 1;
 `
 
 export const Button = styled.button`
   width: 250px;
   height: 40px;
-  border: 2px solid #1e242f;
+  border: 2px solid ${({ theme }) => theme.colors.contextBlack};
   background-color: #ffffff;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   outline: none;

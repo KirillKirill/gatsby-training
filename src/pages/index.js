@@ -8,6 +8,7 @@ import Technologies from "../components/Technologies/Technologies"
 import Mobile from "../components/Mobile/Mobile"
 import Info from "../components/Info/Info"
 import Footer from "../components/Footer/Footer"
+import Team from "../components/Team/Team"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <Technologies />
       <Mobile />
+      <Team />
       <Info />
       <Footer />
     </Layout>

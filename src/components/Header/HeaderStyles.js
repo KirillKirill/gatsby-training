@@ -25,8 +25,8 @@ export const Button = styled.button`
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
-  font-size: 16px;
   font-weight: 500;
+  line-height: 18px;
 `
 
 export const Title = styled.h1`
@@ -42,7 +42,7 @@ export const RedRectangle = styled.div`
   margin-left: -180px;
   width: 200px;
   height: 200px;
-  background-color: #f03f5f;
+  background-color: ${({ theme }) => theme.colors.contextRed};
 `
 
 export const YellowRectangle = styled.div`
@@ -51,12 +51,12 @@ export const YellowRectangle = styled.div`
   right: -40px;
   width: 120px;
   height: 120px;
-  background-color: #ffd363;
+  background-color: ${({ theme }) => theme.colors.contextYellow};
 `
 export const BlackRectangle = styled.div`
   width: 40px;
   height: 40px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const LeftBlackRectangle = styled(BlackRectangle)`
@@ -94,10 +94,7 @@ export const DescriptionBlock = styled.div`
 
 export const DescriptionText = styled.p`
   margin: 0;
-  color: #535b66;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 150%;
+  color: ${({ theme }) => theme.colors.contextGrey};
 `
 
 export const FiguresBlock = styled.div`
@@ -109,17 +106,17 @@ export const FiguresBlock = styled.div`
 `
 
 export const RedFigure = styled.div`
-  background-color: #f03f5f;
+  background-color: ${({ theme }) => theme.colors.contextRed};
   grid-area: redArea;
 `
 
 export const BlackFigure = styled.div`
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
   grid-area: blackArea;
 `
 
 export const VioletFigure = styled.div`
-  background-color: #7a3bff;
+  background-color: ${({ theme }) => theme.colors.contextViolet};
   grid-area: violetArea;
 `
 
@@ -158,15 +155,15 @@ export const Cell = styled.div`
 `
 
 export const YellowCell = styled(Cell)`
-  background-color: #ffd363;
+  background-color: ${({ theme }) => theme.colors.contextYellow};
 `
 
 export const RedCell = styled(Cell)`
-  background-color: #f03f5f;
+  background-color: ${({ theme }) => theme.colors.contextRed};
 `
 
 export const BlackCell = styled(Cell)`
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const VerticalHalf = styled(HorizontalHalf)`
@@ -180,7 +177,7 @@ export const AbsolutedVioletSquare = styled.div`
   left: -85px;
   width: 170px;
   height: 170px;
-  background-color: #7a3bff;
+  background-color: ${({ theme }) => theme.colors.contextViolet};
 `
 
 export const AbsolutedWhiteSquare = styled.div`

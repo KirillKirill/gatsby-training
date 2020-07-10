@@ -11,13 +11,13 @@ export const LeftBlock = styled.div`
   display: flex;
   flex-direction: column;
   width: 1220px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
 `
 
 export const RightBlock = styled.div`
   position: relative;
   width: 720px;
-  background-color: #7a3bff;
+  background-color: ${({ theme }) => theme.colors.contextViolet};
   z-index: 1;
 
   &::before {
@@ -28,7 +28,7 @@ export const RightBlock = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #f03f5f;
+    background-color: ${({ theme }) => theme.colors.contextRed};
   }
 `
 
@@ -38,7 +38,7 @@ export const Cross = styled.div`
   left: -23px;
   height: 170px;
   width: 46px;
-  background-color: #ffd363;
+  background-color: ${({ theme }) => theme.colors.contextYellow};
   z-index: 3;
 
   &::after {
@@ -49,7 +49,7 @@ export const Cross = styled.div`
     transform: translate(-50%, -50%);
     width: 170px;
     height: 46px;
-    background-color: #ffd363;
+    background-color: ${({ theme }) => theme.colors.contextYellow};
   }
 `
 
@@ -111,7 +111,7 @@ export const Button = styled.button`
   width: 200px;
   height: 40px;
   margin-top: 40px;
-  background-color: #7a3bff;
+  background-color: ${({ theme }) => theme.colors.contextViolet};
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;

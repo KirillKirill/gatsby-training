@@ -32,7 +32,7 @@ export const Badge = styled.div`
   align-items: center;
   width: 106px;
   height: 106px;
-  background-color: #f03f5f;
+  background-color: ${({ theme }) => theme.colors.contextRed};
 `
 
 export const BadgeLabel = styled.span`

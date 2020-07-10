@@ -4,7 +4,9 @@
 html {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
     color: #1E242F;
 }
 
@@ -19,5 +21,6 @@ body, h1, h3, p, img  {
 }
 
 button {
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
 }

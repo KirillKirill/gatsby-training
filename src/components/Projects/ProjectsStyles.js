@@ -34,7 +34,7 @@ export const Badge = styled.div`
   width: 106px;
   height: 106px;
   margin-bottom: 20px;
-  background-color: #1e242f;
+  background-color: ${({ theme }) => theme.colors.contextBlack};
   z-index: 1;
 
   &::before {
