@@ -33,6 +33,11 @@ const ContactForm = () => {
       .then(response => {
         alert("Message sent")
         console.log(response)
+        setFormValue({
+          name: "",
+          email: "",
+          message: "",
+        })
       })
   }
 
@@ -60,7 +65,7 @@ const ContactForm = () => {
         value={message}
         onChange={changeInputValue}
       />
-      <S.Button>Send</S.Button>
+      <S.Button disabled={!name || !email || !message}>Send</S.Button>
     </S.Form>
   )
 }

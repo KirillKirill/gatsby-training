@@ -57,4 +57,8 @@ export const Button = styled.button.attrs({ type: "submit" })`
   border: none;
   outline: none;
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 `
